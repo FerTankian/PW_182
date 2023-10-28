@@ -23,8 +23,9 @@ class libros_controller extends Controller
               'txtTitulo' => 'required|max:25',
               'txtRecuerdo' => 'required|min:5', 
           ]);  */
-        Alert::success('¡Éxito!', 'Tu libro se ha registrado correctamente');
-        return redirect('/formulario_libro');
+        return redirect('/registro')->with('confirmacion', 'Tu Registro se guardó correctamente!');
+       /* Alert::success('¡Éxito!', 'Tu libro se ha registrado correctamente');
+         return redirect('/formulario_libro'); */
 
          /* return Alert::success('¡Éxito!', 'Tu libro se ha registrado correctamente');
            return redirect('/')->with ('confirmacion','Tu libro se a registrado'); */
